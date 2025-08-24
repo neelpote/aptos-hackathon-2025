@@ -1,0 +1,88 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles override */
+@layer base {
+  /* Smooth font rendering */
+  html {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    background-color: #f9fafb; /* light gray background */
+    color: #1f2937; /* Gray-800 text color */
+  }
+
+  body {
+    line-height: 1.6;
+  }
+
+  /* Headings styling */
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #111827; /* Gray-900 */
+  }
+
+  h1 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+
+  h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+
+  p {
+    color: #374151; /* Gray-700 */
+  }
+
+  /* Links */
+  a {
+    color: #3b82f6; /* Blue-500 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #2563eb; /* Blue-600 */
+    text-decoration: underline;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .btn {
+    @apply rounded-md px-5 py-2 font-semibold transition-colors duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white shadow-md hover:bg-blue-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-300 text-gray-700 hover:bg-gray-400;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl drop-shadow-md p-6;
+  }
+  
+  .input {
+    @apply border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition;
+  }
+  
+  .textarea {
+    @apply border border-gray-300 rounded-md px-4 py-2 h-24 resize-y focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition;
+  }
+}
+
+/* Utility overrides */
+@layer utilities {
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}

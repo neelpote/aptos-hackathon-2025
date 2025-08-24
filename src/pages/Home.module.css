@@ -1,0 +1,93 @@
+.container {
+  max-width: 1120px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #1e40af; /* blue-700 */
+}
+
+.loading,
+.error,
+.empty {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #4b5563; /* gray-600 */
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: #dc2626; /* red-600 */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb; /* blue-600 */
+  margin-bottom: 0.75rem;
+}
+
+.cardDescription {
+  color: #374151; /* gray-700 */
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.voteButton {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.75rem 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.voteButton:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+.voteButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}

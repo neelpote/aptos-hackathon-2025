@@ -1,0 +1,70 @@
+/* Base body styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6; /* matches bg-gray-100 */
+  color: #1f2937; /* matches text-gray-900 */
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 64px; /* approx 4rem, matching pt-16 in tailwind for content padding */
+  background-color: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem; /* horizontal padding */
+  font-weight: 600;
+}
+
+/* Main content wrapper */
+.main-content {
+  /* padding-top matches navbar height so content not hidden */
+  padding-top: 64px; 
+  min-height: calc(100vh - 64px);
+  max-width: 64rem; /* 4xl = 64rem = 1024px approx */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Responsive tweaks */
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  .navbar {
+    height: 56px; 
+    padding: 0 1rem;
+  }
+  
+  .main-content {
+    padding-top: 56px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .navbar {
+    height: 48px;
+    padding: 0 0.75rem;
+  }
+
+  .main-content {
+    padding-top: 48px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
