@@ -85,13 +85,16 @@ npm run dev
 
 ## Key Screenshots
 
-![Vertical Sidebar Navbar]<img width="1506" height="775" alt="Transaction Succesfull Screenshot" src="https://github.com/user-attachments/assets/1ce59238-8a71-4cd3-bc38-a16ef86bd27c" />
+<img width="1506" height="775" alt="Transaction Succesfull Screenshot" src="https://github.com/user-attachments/assets/1ce59238-8a71-4cd3-bc38-a16ef86bd27c" />
 
 
-![Proposal Submission Form]<img width="1512" height="982" alt="Screenshot 2025-08-24 at 11 30 46 AM" src="https://github.com/user-attachments/assets/5aa8ce07-72e7-4cad-a567-c82816f56622" />
+<img width="1512" height="982" alt="Screenshot 2025-08-24 at 11 30 46 AM" src="https://github.com/user-attachments/assets/5aa8ce07-72e7-4cad-a567-c82816f56622" />
 
 
-![Voting Page]<img width="1512" height="982" alt="Screenshot 2025-08-24 at 12 22 15 PM" src="https://github.com/user-attachments/assets/75e00912-1792-4c29-93fc-1a026ec8b221" />
+<img width="1512" height="982" alt="Screenshot 2025-08-24 at 12 22 15 PM" src="https://github.com/user-attachments/assets/75e00912-1792-4c29-93fc-1a026ec8b221" />
+
+
+<img width="1512" height="982" alt="Screenshot 2025-08-24 at 12 44 42 PM" src="https://github.com/user-attachments/assets/121af905-95a4-4988-b6c6-95b03a1c75ee" />
 
 
 ---
